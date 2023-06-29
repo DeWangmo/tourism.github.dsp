@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="tourism.css">
+  <title>Tourism websites</title>
+  
+    <script>
+    function updateDateTime() {
+      var currentDate = new Date();
+      var dateElement = document.getElementById("date");
+      var timeElement = document.getElementById("time");
+
+      // Format the date
+      var options = { year: 'numeric', month: 'long', day: 'numeric' };
+      var formattedDate = currentDate.toLocaleDateString(undefined, options);
+
+      // Format the time
+      var formattedTime = currentDate.toLocaleTimeString();
+
+      // Update the HTML elements
+      dateElement.innerHTML = formattedDate;
+      timeElement.innerHTML = formattedTime;
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+  </script>
+  <style>
+    *{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'poppins', sans-serif;
+}
+.navbar{
+width: 100%;
+height: 130px;
+background-color: lightblue;
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: white;
+}
+.menu{
+  align-items: center;
+}
+.menu a{
+  transition-duration: none;
+  color: #000;
+  padding: 5px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.menu a:hover{
+  border-bottom: 2px solid #000;
+  transition: 0.4s;  
+}
+.load{
+  animation: slide 2s;
+}
+.slider{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: slide 40s infinite;
+}
+@keyframes slide{
+  0%{
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/95/693/desktop-wallpaper-paro-taktsang-tigers-nest-monastery-paro-valley-paro-bhutan.jpg');
+  }
+  20%{
+    background-image: url('https://bhutankoryotours.com/wp-content/uploads/2015/03/Chorten-Kora-Festival.jpg');
+  }
+  20.01%{
+    background-image: url('https://thrillingtravel.in/wp-content/uploads/2018/06/Chimi-Lhakhang_Fertility-Temple_Bhutan-1024x683.jpg');
+  }
+  40%{
+    background-image: url('https://pickyourtrail.com/blog/wp-content/uploads/2020/05/6590269813_45d2bbea04_b-1.jpg');
+  }
+  40%{
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/422/487/desktop-wallpaper-index-of-thimphu.jpg');
+  }
+  40.01%{
+    background-image: url('https://cdn.bookmytour.bt/uploads/attractions/gasa-dzong-1521541536_850_400.jpg');
+  }
+  60%{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d2/Tashigang_Dzong_111120.jpg');
+  }
+  80%{
+    background-image: url('https://bhutancranevalley.com/wp-content/uploads/2018/04/merak-trek.jpg');
+  }
+  80.01%{
+    background-image: url('https://kuenselonline.com/wp-content/uploads/2023/05/kajaThromPunakha.jpg');
+  }
+  100%{
+    background-image: url('https://www.heavenlybhutan.com/wp-content/uploads/2020/08/Wangdue-Phodrang-Dzong.jpg');
+  }
+
+}
+.body{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;  
+}
+.heading{
+  width:25%;
+  text-align: center;
+  color: black;
+}
+.heading h1{
+  font-size: 40px;
+  color: black;
+}
+.heading a{
+  text-decoration: none;
+  color:black;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 20px;
+  background-color: #fff;
+}
+.heading a:hover{
+  letter-spacing: 3px;
+  transition: o.6s;
+}
+.tours{
+  width: 70%;
+  display: flex;
+  justify-content:space-around;
+}
+.places{
+  display: inline;
+  text-align: center;
+  border-radius: 10px;
+}
+.places h2{
+  color: darkred;
+  font-size: 18px;
+  letter-spacing: 3px;
+  border-radius: 1px;
+  padding: 10px;
+}
+.places a{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 12px 30px;
+  background-color: #fff;
+}
+.places a:hover{
+  background-color: #000;
+  letter-spacing: 3px;
+  transition: 0.6s;
+}
+.footer{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer{
+  color: black;
+}
+table td a{
+  color: black;
+}
+table td a:hover{
+  cursor: pointer;
+}
+
+ 
+     .p1{
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+input{
+    font-family: sans-serif;
+    width: 200px;
+    height: 38px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top:15px;
+    border: 2px solid black;
+    position: relative;
+    left: 1040px;
+   }
+
+    
+  </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="navbar">
+  <div class="logo">
+    <img style="position:relative;width: 110px;height: 100px;top: 20px;right: 50px;padding: 5px;" src="https://www.tourism.gov.bt/build/img/rgob-logo.png">
+    <h1 style="position:relative;left: 80px;bottom: 30px;color: black;">Department of Tourism</h1>
+  </div>
+ 
+  <div class="menu">
+      <a href="C:\Users\deche\OneDrive\Desktop\tourism\abouttourism.html">About Us</a>
+      <a href="C:\Users\deche\OneDrive\Desktop\tourism\tourismhistory.html">History</a>
+      <a href="C:\Users\deche\OneDrive\Desktop\tourism\tourismcontact.html">Contact Us</a>
+  </div>
+  </div>
+  <div>
+    <form action="https://www.google.com/search" method="GET">
+    <input type="text" placeholder="&#xf002; search any" name="q"></form>
+  </div>
+
+<p1>Date: <span id="date"></span></p1><br><br>
+<p1>Time: <span id="time"></span></p1>
+
+<div class="slider">
+  <div class="load">
+  </div>
+</div>
+<div class="body">
+  <div class="heading">
+    <h1>Visit us</h1><br>
+    <p>Bhutan has pledged to remain carbon neutral (CN) in perpetuity. Whether they can sustain this is questionable due to the country's increasing economic growth (GDP) and commitment to gross national happiness (GNH) outcomes, both of which can lead to a rise in greenhouse gas (GHG) emissions.<br>Bhutan's tourism sector is regarded as one of the most exclusive travel destinations in the world. Bhutan enjoys a reputation for authenticity, remoteness and a well-protected cultural heritage and natural environment.</p>
+    <br>
+    <br>
+    <a href="htourism.html">Learn More</a>
+
+  </div>
+<div class="tours">
+  <div class="places">
+    <h2>Tiger Nest</h2>
+    <img src="https://i.pinimg.com/originals/42/1c/09/421c097e2c0077cec17695769b44c1f7.jpg" style="width:300px;height: 250px;border-radius: 10px;">
+    <br>
+    <br>
+    <a href="form.html">Book now</a>
+  </div>
+  <div class="places">
+    <h2>Chimi Lhakhang</h2>
+    <img src="https://i.pinimg.com/originals/91/aa/5c/91aa5c39e9b5ab5992eb637d349d26f9.jpg" style="width:300px;height: 250px;border-radius: 10px;">
+    <br>
+    <br>
+    <a href="form.html">Book now</a>
+  </div>
+  <div class="places">
+    <h2>Memorial Chorten</h2>
+    <img src="https://i.pinimg.com/originals/01/e1/c5/01e1c5be2cd21bd3518d837d550b6c23.jpg"style="width:300px;height: 250px;border-radius: 10px;">
+    <br>
+    <br>
+    <a href="form.html">Book now</a>
+  </div>
+</div>
+</div>
+</body>
+<footer style="background-color: lightblue;opacity: 0.7;">
+  <center><table>
+    <tr>
+      <th style="padding-left: 30px;">Essential Links</th>
+      <th style="padding-left: 30px;">Social Links</th>
+      <th style="padding-left: 30px;">Contact Info</th>
+    </tr>
+    <tr>
+      <td style="padding-left: 80px;">
+        <a href="https://www.magicalnepal.com/bhutan/?gad=1&gclid=CjwKCAjwvpCkBhB4EiwAujULMtEIuuNb6-ll1mjiOjueB2AOAAEW6RV4hhwwRIx9IHCPbEb8ZI2N6BoCG04QAvD_BwE">Bhutan Destination Website</a><br>
+        <a href="https://abto.org.bt/">Association of Bhutanese Tour Operator</a><br>
+        <a href="https://www.hab.org.bt/">Hotel & Restaurant Association of Bhutan</a><br>
+        <a href="https://www.facebook.com/GuideAssociationofBhutan/">Guides Association of Bhutan</a><br>
+        <a href="https://www.tourism.gov.bt/">Department of Tourism</a><br>
+      </td>
+      <td style="padding-left: 80px;">
+        Post Box: 126<br>
+        Thimphu, Bhutan<br>
+        Tel: +975 2 323251/323252<br>
+        Fax: +975 2 323695<br>
+      </td>
+      <td style="padding-left: 50px;">
+        FACEBOOK <a href="https://www.facebook.com/destinationbhutan/"><br><i class="fa-brands fa-facebook" style="width: 100px; height:100px;display: font-awesome;"></i></a><br>
+        TWITTER <a href="https://twitter.com/tourismgoi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><br><i class="fa-brands fa-twitter" style="width: 100px; height:100px;"></i><br>
+      INSTAGRAM   <a href="https://www.instagram.com/tourismbhutan/?hl=en"> <br><i class="fa-brands fa-instagram" style="width: 100px; height:100px;"></i></a><br>
+
+
+</td>
+    </tr>
+    <tr>
+  </table>
+  
+  </center>
+ <center><p style="position: relative;top: 20px;">Copyright © All Rights Reserved. Department of Tourism</p></center>
+</html>

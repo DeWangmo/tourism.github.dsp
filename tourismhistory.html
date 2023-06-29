@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+     function updateDateTime() {
+      var currentDate = new Date();
+      var dateElement = document.getElementById("date");
+      var timeElement = document.getElementById("time");
+
+      // Format the date
+      var options = { year: 'numeric', month: 'long', day: 'numeric' };
+      var formattedDate = currentDate.toLocaleDateString(undefined, options);
+
+      // Format the time
+      var formattedTime = currentDate.toLocaleTimeString();
+
+      // Update the HTML elements
+      dateElement.innerHTML = formattedDate;
+      timeElement.innerHTML = formattedTime;
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+      function Redirect(){
+      window.loction = "tourism.html";
+          }
+
+  </script>
+  <style>
+    *{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'poppins', sans-serif;
+}
+.navbar{
+width: 100%;
+height: 130px;
+background-color: lightblue;
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: white;
+}
+.menu{
+  align-items: center;
+}
+.menu a{
+  transition-duration: none;
+  color: #000;
+  padding: 5px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.menu a:hover{
+  border-bottom: 2px solid #000;
+  transition: 0.4s;  
+}
+    body{
+      background-color: skyblue,lightgreen;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: cover;
+      background-attachment: fixed;
+    }
+
+  
+    
+    h3{
+      color: black;
+      text-align: center;
+      font-size: 20px;
+      font-family: ;
+    }
+    p{
+      color: black;
+      text-align: center;
+      font-size: 20px;
+    }
+    .img1{
+      border-radius: 20px;
+
+    }
+
+    .img{
+      height: 200px;
+      width: 400px;
+      border-radius: 20px;
+    }
+       
+    footer{
+  color: black;
+}
+table td a{
+  color: black;
+}
+table td a:hover{
+  cursor: pointer;
+}
+.p1{
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+  </style>  
+</head>
+<div class="navbar">
+  <div class="logo">
+    <img style="position:relative;width: 110px;height: 100px;top: 20px;right: 50px;padding: 5px;" src="https://www.tourism.gov.bt/build/img/rgob-logo.png">
+    <h1 style="position:relative;left: 80px;bottom: 30px; color: black;">Department of Tourism</h1>
+  </div>
+  <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="C:\Users\deche\OneDrive\Desktop\tourism\abouttourism.html">About Us</a>
+      <a href="C:\Users\deche\OneDrive\Desktop\tourism\tourismcontact.html">Contact Us</a>
+  </div>
+</div>
+<br>
+<p1>Date: <span id="date"></span></p1><br><br>
+<p1>Time: <span id="time"></span></p1>
+<br>
+<br>
+<body>
+  <br>
+  <h2><center>"Leave Nothing but Footprint,Take Nothing But Memories"</center></h2>
+  <br>
+
+  
+  <br>
+  <center><img class="img1"src="https://i.pinimg.com/originals/6d/1c/c5/6d1cc572c2e797877bfef85abd230c25.jpg" height="300px" width="400px"></center>
+  <br><br>
+  <center><h2>HISTORY OF TOURISM IN BHUTAN</h2></center>
+  <br><br>
+  <h3>Brief history of tourism:</h3>
+  <br>
+  <p>Bhutan opened its door to the outside world with the formulation of Tourism Regulation in 1971 to raise its <br>revenue and to promote the country's unique culture and traditions. Tourism in Bhutan began in 1974, when the<br> Government of Bhutan, in an effort to raise revenue and to promote the country’s unique<br> culture and traditions to the outside world, opened its isolated country to foreigners.</p>
+  <br>
+  <p> In 1974, 287 tourists visited Bhutan. Since then the number of tourists visiting Bhutan has increased to 2,850 in 1992, rising dramatically to 7,158 in 1999. By the late 1990s tourism contributed over US$2 million in annual revenue. Today tourism is 2nd highest revenue contributor after Hydro Power.</p>
+  <br> 
+  <p>By 1972, the DoT built the country’s first tourist hotels; a 34-room hotel in Thimphu and 24 room hotel in Phuntsholing. In the same year, during the spring session, the National Assembly vested the Ministry of Foreign Affairs the responsibility of issuing permits to foreign tourists.</p>
+  <br>
+  <p>Until 1991,then known as Bhutan Tourism Corporation(BTC), a quasiautonomous and self-financing body,implemented the government's tourism policy.Toursim was however,privatived in 1991, facilitating private sector investment and activity.As a result, today over 1300 licensed tourist companies operate in the country.</p>
+  <br>
+  <br>
+
+  <br><h3>Challenges:</h3>
+  <br>
+  <p>Back in the days, travelling to Bhutan was not easy. According to an undated but an old government white paper, the three biggest difficulties tourists faced were the getting the transit permit, lack of trained personnel and inadequate hotel facilities.</p>
+
+  <p>With the introduction of air services between India and Bhutan in the 1983,this changed.In the frist two years, the number of tourists fell but surprisingly the revenue increased.</p>
+
+  <p>However in 1988,Bhutan upgraded its aircraft to a BA 146 and 15 years later in 2003,an Aibus replaced it.By 2006,Drukair was flying to three countries.Then the number of tourist visiting Bhutan has progressively increased. </p>
+  <br>
+  <br>
+
+  <br><h3>Changes:</h3>
+  <br>
+  <p>Bhutan has actively pursued and successful implemented the tourism policy of high value,low volume and inclusive tariff system.Bhutan still has a pristine environment and is one of the last living museums in the world and earned a reputation of high end tourist destination.</p>
+  <br>
+  <br>
+  
+
+  <img class="img"src="https://i.pinimg.com/originals/91/aa/5c/91aa5c39e9b5ab5992eb637d349d26f9.jpg">
+
+  <img class="img"src="https://i.pinimg.com/originals/e6/f9/00/e6f900673ea228308a7770edd0c8a5f2.jpg">
+
+  <img class="img"src="https://i.pinimg.com/originals/bb/fd/ee/bbfdee1dcfe1bbadf72d3ab0fcab8cfc.jpg">
+
+
+</div>
+</body>
+<footer style="background-color: lightblue;opacity: 0.7;">
+  <center><table>
+    <tr>
+      <th style="padding-left: 40px;">Essential Links</th>
+      <th style="padding-left: 40px;">Social Links</th>
+      <th style="padding-left: 40px;">Contact Info</th>
+    </tr>
+    <tr>
+      <td style="padding-left: 100px;">
+        <a href="#">Bhutan Destination Website</a><br>
+        <a href="#">Association of Bhutanese Tour Operator</a><br>
+        <a href="#">Hotel & Restaurant Association of Bhutan</a><br>
+        <a href="#">Guides Association of Bhutan</a><br>
+        <a href="#">Royal Bhutan Helicopter Services Limited</a><br>
+        <a href="#">Bhutan Airlines</a><br>
+        <a href="#">Online Non-antique Export System</a><br>
+        <a href="#">Department of Tourism</a><br>
+      </td>
+      <td style="padding-left: 100px;">
+        Post Box: 126<br>
+        Thimphu, Bhutan<br>
+        Tel: +975 2 323251/323252<br>
+        Fax: +975 2 323695<br>
+      </td>
+      <td style="padding-left: 50px;">
+        FACEBOOK <a href="https://www.facebook.com/destinationbhutan/"><br><i class="fa-brands fa-facebook" style="width: 100px; height:100px;display: font-awesome;"></i></a><br>
+        TWITTER <a href="https://twitter.com/tourismgoi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><br><i class="fa-brands fa-twitter" style="width: 100px; height:100px;"></i><br>
+      INSTAGRAM   <a href="https://www.instagram.com/tourismbhutan/?hl=en"> <br><i class="fa-brands fa-instagram" style="width: 100px; height:100px;"></i></a><br>
+
+      </td>
+    </tr>
+    <tr>
+  </table></center>
+ <center><p style="position: relative;">Copyright © All Rights Reserved. Department of Tourism</p></center>
+</footer>
+</html>
